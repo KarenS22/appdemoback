@@ -40,7 +40,11 @@ RUN echo "Starting WildFly server" && \
       rm -rf $JBOSS_HOME/standalone/configuration/standalone_xml_history/ $JBOSS_HOME/standalone/log/* && \
       rm -f /tmp/*.jar
 
-COPY maven/${project.build.finalName}.${project.packaging} ${JBOSS_HOME}/standalone/deployments/
+#COPY maven/${project.build.finalName}.${project.packaging} ${JBOSS_HOME}/standalone/deployments/
+COPY target/demoappdocker.war ${JBOSS_HOME}/standalone/deployments/
+
+
+
 EXPOSE 8080
 EXPOSE 8009
 EXPOSE 9990

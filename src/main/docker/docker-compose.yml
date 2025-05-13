@@ -1,4 +1,4 @@
-version: '3.6'
+#version: '3.6'
 
 services:
   srvdb:
@@ -11,7 +11,7 @@ services:
       POSTGRES_PASSWORD: QueryConSql.pwd
       TZ:  America/Guayaquil
     ports:
-      - 5432:5432
+      - 5433:5432
     networks:
       - datalogger_net
     volumes:
@@ -48,13 +48,20 @@ services:
     networks:
       - datalogger_net
 
+  frontend:
+    image: karens22/appdemo:1.0
+    container_name: srvfrontend
+    ports:
+      - 4201:80
+    depends_on:
+      - srvwildfly
+    networks:
+      - datalogger_net
+
+
 volumes:
   pg_data2:
-    driver: local
-    driver_opts:
-      o: bind
-      type: none
-      device: /Users/cristiantimbi/datapg
+
 
 networks:
   datalogger_net:

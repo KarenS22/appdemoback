@@ -1,3 +1,12 @@
-ec/edu/ups/p58/pw/demoappdocker/Jsf23Activator.class
-ec/edu/ups/p58/pw/demoappdocker/ApplictaionPathActivator.class
-ec/edu/ups/p58/pw/demoappdocker/HolaMundoService.class
+ec\edu\ups\p58\pw\demoappdocker\ApplictaionPathActivator.class
+ec\edu\ups\p58\pw\demoappdocker\dao\LibroDAO.class
+ec\edu\ups\p58\pw\demoappdocker\service\PersonService.class
+ec\edu\ups\p58\pw\demoappdocker\model\Person.class
+ec\edu\ups\p58\pw\demoappdocker\model\Libro.class
+ec\edu\ups\p58\pw\demoappdocker\dao\PersonDAO.class
+ec\edu\ups\p58\pw\demoappdocker\CorsFiltter.class
+ec\edu\ups\p58\pw\demoappdocker\service\LibroService.class
+ec\edu\ups\p58\pw\demoappdocker\management\LibroManagement.class
+ec\edu\ups\p58\pw\demoappdocker\management\PersonManagement.class
+ec\edu\ups\p58\pw\demoappdocker\HolaMundoService.class
+ec\edu\ups\p58\pw\demoappdocker\Jsf23Activator.class
