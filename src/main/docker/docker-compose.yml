@@ -19,7 +19,7 @@ services:
 
 
   srvwildfly:
-    image: ups/demoappdocker
+    image: karens22/demoappdocker
     container_name: srvwildfly
     hostname: srvwildfly
     environment:
